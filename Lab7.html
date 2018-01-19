@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lab 7</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+    
+        body {
+            background-color: White;}
+        
+        .wrap {
+            width: 1024px;
+            margin: 0 auto;
+            text-align:center;
+        }
+        
+        .wflex {
+            display:flex;
+            align-content: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        header article{
+            background-color: aqua;
+            width:49%;
+            padding: 20px 0;
+            margin-top: 10px;
+        }
+        
+        .image img {
+            width: 100%;
+            margin-top: 10px;
+        }
+        
+        .body article {
+            background-color: bisque;
+            width: 32%;
+            padding: 20px 0;
+            margin-top: 10px;
+        }
+        
+        .body article p {
+            padding: 0 20px 0 20px;
+        }
+        
+        footer article {
+            background-color: aquamarine;
+            padding: 20px 0;
+            width:24%;
+            margin-top: 10px;
+        }
+        
+        
+        @media screen and (max-width: 1024px) {
+            
+            .wrap{ Width:95%;
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            
+            header article{
+                width: 100%;
+            }
+
+            .body article {
+                width: 100%;
+                
+            }
+ 
+            
+            footer article {
+                width: 49%;
+                
+            }
+            
+        }
+        
+        @media screen and (max-width: 400px) {
+            
+             footer article {
+                width: 100%;
+            }
+        }
+    </style>
+    </head>
+    
+<body>
+    
+    <header>
+        <div class= "wrap wflex">
+        <article>Top 1</article> 
+        <article>Top 2 </article>
+        </div>
+        
+            </header>
+    <section class="image">
+        <div class="wrap">
+            <img src="planks.jpg" alt="image">
+            
+        </div>
+    </section>
+    
+    <section class="wrap wflex body">
+        <article> <h2>Header</h2><p>somestuff</p> </article>
+    <article>  <h2>Header</h2><p>somestuff </p> </article>
+        <article>  <h2>Header</h2><p>somestuff </p> </article>
+        
+    </section>
+    
+    <footer class = "wrap wflex">
+    <article>Bottom 1</article>
+        <article>Bottom 2</article>
+        <article>Bottom 3</article>
+        <article>Bottom 4</article>
+        
+    </footer>
+    
+    </body>
+
+
+</html>
